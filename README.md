@@ -1,6 +1,6 @@
-# CryptoZombies, lesson 2
+# CryptoZombies, lesson 3
 
-I followed the tutorial from https://share.cryptozombies.io/en/lesson/2/share/alext?id=Z2l0aHVifDE2MjQ1MjI=
+I followed the tutorial from https://share.cryptozombies.io/en/lesson/3/share/alext?id=Z2l0aHVifDE2MjQ1MjI=
  
 
 In addition, unit tests have been added.
