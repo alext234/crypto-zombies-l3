@@ -40,9 +40,9 @@ seth --from $ACCOUNT2 --password empty-password.txt send $zombieHelper 'createRa
 seth call $zombieHelper 'getZombiesByOwner(address)(uint[])' $ACCOUNT1
 seth call $zombieHelper 'getZombiesByOwner(address)(uint[])' $ACCOUNT2
 
-export zombiesArray1=`seth call $zombieHelper 'getZombiesByOwner(address)(uint[])' $ACCOUNT1`
+zombiesArray1=`seth call $zombieHelper 'getZombiesByOwner(address)(uint[])' $ACCOUNT1`
 #get the number of items in zombiesArray1
-export numZombiesAccount1=`echo $zombiesArray1 | tr -d '[]' | tr ',' '\n' | wc -l`
+numZombiesAccount1=`echo $zombiesArray1 | tr -d '[]' | tr ',' '\n' | wc -l`
 
 if [ "$numZombiesAccount1" -ne "1" ]
 then
@@ -50,7 +50,6 @@ then
 fi
 
 export zombiesArray2=`seth call $zombieHelper 'getZombiesByOwner(address)(uint[])' $ACCOUNT2`
-print $zombiesArray2
 export numZombiesAccount2=`echo $zombiesArray2 | tr -d '[]' | tr ',' '\n' | wc -l`
 
 if [ "$numZombiesAccount2" -ne "1" ]
