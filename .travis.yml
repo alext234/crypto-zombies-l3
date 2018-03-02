@@ -8,7 +8,7 @@ before_script:
   - . ~/.nix-profile/etc/profile.d/nix.sh
   - nix-channel --add https://nix.dapphub.com/pkgs/dapphub
   - nix-channel --update
-  - nix-env -iA dapphub.master.{dapp,seth,hevm,solc}}
+  - nix-env -iA dapphub.master.{dapp,seth,hevm,solc}
 
 script:
   - ./.travis-test
