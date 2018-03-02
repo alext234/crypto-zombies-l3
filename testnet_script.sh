@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+# TODO: call this script in .travis.yml 
+# dapp testnet --accounts=2 -- ./testnet_script.sh 
+
 # this script tests the interactions with the contract through a testnet
 
 # echo on (print out each command as it is executed)
